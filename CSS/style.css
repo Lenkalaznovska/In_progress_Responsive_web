@@ -1,0 +1,372 @@
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Navigation */
+header {
+  background-color: #33292a;
+  color: #fff;
+  font-size: 20px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+
+nav li {
+  padding: 10px;
+  font-weight: bold;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover {
+  color: #e9877b;
+}
+
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  text-align: right;
+}
+
+.hamburger-menu img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Hero Section */
+.hero-container {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.hero {
+  width: 100%;
+  height: 80vh;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-text {
+  position: absolute;
+  font-size: 5vw;
+  text-align: right;
+  right: 30%;
+  bottom: 10%;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+/* About Us Section */
+.container-aboutus {
+  display: flex;
+  justify-content: center;
+  margin: 40px auto;
+  max-width: 70%;
+}
+
+.aboutus {
+  display: flex;
+  gap: 10px;
+}
+
+.aboutus h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.aboutus p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.aboutus-image {
+  border-radius: 5px;
+  width: 50%;
+}
+
+/* What We Do Section */
+.container-whatwedo {
+  padding: 50px;
+  background-color: #33292a;
+  color: white;
+}
+
+.whatwedo {
+  text-align: center;
+}
+
+.whatwedo h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.whatwedo p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.icons-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+
+.whatwedo img {
+  width: 100px;
+  height: 100px;
+}
+
+.activity-name {
+  margin-top: 10px;
+}
+
+/* Our Trips Section */
+.container-ourtrips {
+  padding: 50px;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+.ourtrips {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  position: relative;
+}
+
+.ourtrips h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  background-color: lightgray;
+  text-align: center;
+  padding-top: 170px;
+  border-radius: 5px;
+  height: 100%;
+}
+
+.ourtrips-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+/* Where Do You Want to Go Section */
+.container-wheredoyouwant {
+  padding: 50px;
+  background-color: #644b4f;
+  text-align: center;
+  color: white;
+}
+
+.wheredoyouwant h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.wheredoyouwant p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.contactus-button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.contactus-button:hover {
+  background-color: #e9877b;
+}
+
+/* Reviews Section */
+.reviews-container {
+  width: 70%;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.description {
+  max-width: 60%;
+  margin: auto;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.container-reviews {
+  margin-top: 20px;
+}
+
+.review {
+  margin-bottom: 40px;
+}
+
+.review-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 20px auto;
+}
+
+/* Photo Section */
+.photo-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.photo-container img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Footer Section */
+footer {
+  padding: 20px;
+  background-color: #33292a;
+  color: white;
+  text-align: center;
+}
+
+footer a {
+  color: #d0766b;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-container p {
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  .hamburger-menu {
+    display: block;
+    padding: 10px;
+  }
+
+  .hero-text {
+    font-size: 12vw;
+    right: 10%;
+    text-shadow: 15px 2px 4px #000000;
+  }
+
+  .aboutus {
+    flex-direction: column;
+  }
+
+  .aboutus-image {
+    width: 100%;
+  }
+
+  .aboutus p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+
+  .review-content {
+    flex-direction: column;
+  }
+
+  .review-image {
+    margin: 20px auto;
+  }
+
+  .description {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .icons-container {
+    flex-direction: column;
+    align-items: center;
+    line-height: 40px;
+    margin-top: 40px;
+  }
+
+  .ourtrips {
+    grid-template-columns: 1fr;
+  }
+
+  .ourtrips-image {
+    width: 100%;
+  }
+
+  .ourtrips h2 {
+    padding-top: 10px;
+  }
+
+  .contactus-button {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .description {
+    max-width: 100%;
+  }
+
+  .photo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #eaeaea;
+  }
+
+  .photo-container img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .wheredoyouwant p {
+    text-align: left;
+  }
+
+  footer {
+    padding: 20px 0;
+  }
+}
